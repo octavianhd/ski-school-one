@@ -1,0 +1,243 @@
+/*----------------------------------------------
+
+    Developed by Octavian Mos 2015
+    octavianhd@gmail.com
+
+-----------------------------------------------*/
+/*----------------------------------------------
+
+    Table of content:
+
+    #Main;
+    #Navigation;
+    #Carousel;
+    #Jumbotron;
+    #Nav section;
+    #Home section;
+    #Gallery;
+    #Contact;
+    #Footer;
+    #Responsive.
+-----------------------------------------------*/
+/*-------------------------------Main-----------------------------------*/
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url(pics/back_ski.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: normal;
+	margin: 0;
+}
+p{
+	text-indent: 20px;
+}
+a,button{
+	transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+}
+a:hover, a:focus {
+	text-decoration: none;
+}
+.title{
+	margin-bottom: 50px;
+}
+.title h2{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 800;
+	color: #888888;
+	text-shadow: 1px 1px 3px #000;
+}
+.separator{
+	text-align: center;
+	width: 200px;
+	height: 40px;
+	background-image: url(pics/delimiters-35879_1280.png);
+	background-repeat: no-repeat;
+	margin:10px auto;
+}
+
+/*------------------------------Navigation----------------------------*/
+
+.umbra1{
+	position:relative;
+	text-transform: uppercase;
+	box-shadow: 5px 5px 5px #888888;
+	margin: 0;
+}
+.umbra1:hover{
+	box-shadow: 2px 2px 4px #000;
+}
+.img2{
+	width:100px;
+	height:80px;
+	margin-right:20px;
+	opacity:0.3;
+}
+.img2:hover{
+	opacity:0.8;
+}
+
+/*-------------------------------Carousel-------------------------------*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+	position: relative;
+	width:70%;
+	height: 250px;
+	margin:auto;
+}
+
+/*-------------------------------Jumbotron----------------------------*/
+
+.umbra{
+	width: 100%;
+	height: 300px;
+	color: white;
+	text-shadow:5px 5px 10px #888888,1px 1px 2px blue;
+	margin: 0;
+}
+.umbra h2{
+	font-size: 44px;
+}
+.imgJumbotron{
+	width:50px;
+	height:50px;
+	margin:50px;
+}
+
+/*---------------------------Nav------------------------------------*/
+
+#ul1,li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*----------------------Home--------------------------------------*/
+
+#home img{
+	width: 250px;
+	height: 180px;
+	margin: 5px;
+}
+
+/*----------------------Gallery-----------------------------------*/
+
+#gallery{
+	background-image: url('pics/back_ski.jpg');
+	margin: 0;
+}
+.img1{
+	position: relative;
+	width: 333px;
+	height: 200px;
+	margin:3px;
+	border:5px solid #cfcfcf;
+	box-shadow: ;
+	transition:0.2s;
+}
+.img1:hover{
+	position: relative;
+	box-shadow: 5px 5px 5px #888888;
+
+}
+
+/*--------------------Contact-------------------------------*/
+
+#contact{
+	padding:0; 
+	margin-top: 5px;
+}
+#contact input, #contact textarea{
+	border: none;
+	border-bottom: 1px solid black;
+	background: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+#contact button{
+	position:center;
+	padding: 15px 30px;	
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+#contact button:hover{
+	box-shadow: 5px 5px 5px #888888;
+}
+#contact img{
+	width:200px;
+	height:200px;
+	margin: 100px;
+}
+
+/*--------------------Footer-------------------------------*/
+
+footer{
+	height: 50px;
+	text-align: center;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+/*--------------------Responsive--------------------------*/
+
+@media only screen and (max-width: 768px){
+	body{
+		font-size: small;
+	}
+	.title{
+		margin-bottom: 10px;
+	}
+	.title h2{
+		font-size: 24px;
+	}
+	.carousel-inner > .item > img,
+	.carousel-inner > .item > a > img{
+		position: relative;
+		width:70%;
+		height: 100px;
+		margin:auto;
+	}
+	#home img{
+		width: 100px;
+		height: 80px;
+	}
+	.umbra{
+		width: 100%;
+		height: 150px;
+	}
+	.umbra h2{
+		font-size: 24px;
+	}
+	.umbra h3{
+		font-size: 16px;
+	}
+	.umbra img{
+		width: 0px;
+		height: 0px;
+	}
+	.img2{
+		width: 0px;
+		height: 0px;
+	}
+	.img1{
+		width: 150px;
+		height: 100px;
+	}
+	#contact{
+		margin: 0px;
+	}
+	#contact h3{
+		font-size: 16px;
+	}
+	#contact img{
+		width: 0px;
+		height: 0px;
+		margin: 0px;
+	}
+}
